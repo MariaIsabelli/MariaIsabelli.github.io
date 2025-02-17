@@ -8,9 +8,9 @@ bio: print('Hello World'), Full Stack Developer, specialized in systems analysis
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/perfil.jpg
 
-url: https://zchef2k.github.io/indigo-linkinbio
+url: https://mariaisabelli.github.io/
 permalink: /:title/
 
 # To enable google analytics, supply your token below
@@ -37,7 +37,7 @@ github: johndoe
 # medium: 
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: johndoe@gmail.com
+email: mariaisabellipinto@gmail.com
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
