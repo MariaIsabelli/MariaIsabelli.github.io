@@ -2,15 +2,15 @@
 name: Maria Isabelli
 bio: print('Hello World'), Full Stack Developer, specialized in systems analysis and development and DevSecOps.
 
-# twitter summary info
-#description: john's nifty linktreehosted on github pages.
+# site settings
+url: "https://mariaisabelli.github.io"
+baseurl: ""  # mantenha vazio se estiver usando o repositório MariaIsabelli.github.io
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/perfil.jpg
+picture: /assets/images/perfil.jpg  # com / no começo para evitar erro de caminho
 
-url: https://mariaisabelli.github.io/
 permalink: /:title/
 
 # To enable google analytics, supply your token below
@@ -20,54 +20,32 @@ permalink: /:title/
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
-# if you don't have any of social below, comment the line
-# facebook:
-# twitter:
-instagram: https://www.instagram.com/marie.isabelli/?next=%2F
-# pinterest:
-linkedin: https://www.linkedin.com/in/maria-isabelli-365543215?originalSubdomain=br
-# youtube: 
-# spotify:  
+# social media links (só descomentar o que você usa)
+instagram: https://www.instagram.com/marie.isabelli/
+linkedin: https://www.linkedin.com/in/maria-isabelli-365543215/
 github: https://github.com/MariaIsabelli
-# gitlab: 
-# lastfm: 
-# stackoverflow: 
-# quora: 
-# reddit: 
-medium: https://medium.com/@mariaisabellipinto 
-# vimeo: myvimeo
-# lanyrd: mylanyrd
+medium: https://medium.com/@mariaisabellipinto
 email: mariaisabellipinto@gmail.com
 
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: normal
+# site layout options
+width: normal  # opções: normal (560px) ou large (810px)
 
-# if you do/don't need pagination, toggle 'enabled' between true/false below
+# pagination
 pagination:
   enabled: false
-  sort_reverse: true # display recent posts first
-  title: ":title" # Changing this will mess up the header display logic
+  sort_reverse: true
+  title: ":title"
   per_page: 5
-  permalink: "/:num/" # pagination link that will be appended
+  permalink: "/:num/"
 
-# if you don't need projects, comment the *projects* configs below
-#projects: true
-
-# if you don't need "about" or "blog", comment them out below
-about: false
-blog: false
-
-# If you want to include your resume, set to true
-# and specify source (external or local).
-#resume: false
+# resume settings
 resume-external: true
 resume-url: https://docs.google.com/document/d/1LUMWTgDC4VX8JvDfLBahBpceGzik41ArqaYBevEN9Qo/edit?usp=drive_link
 
-# do you want some animations?
+# enable animations
 animation: true
 
+# enable plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-gist
@@ -82,13 +60,12 @@ compress_html:
       - development
       - stage
 
+# arquivos a serem ignorados no build
 exclude:
-  [
-    "travis.sh",
-    "README.md",
-    "Gemfile",
-    "Gemfile.lock",
-    "FAQ.md",
-    "node_modules",
-    "vendor",
-  ]
+  - travis.sh
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - FAQ.md
+  - node_modules
+  - vendor
